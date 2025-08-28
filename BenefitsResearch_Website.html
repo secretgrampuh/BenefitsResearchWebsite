@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Benefits Research Company | Employee Benefits Since 1979</title>
+  <meta name="description" content="Employee benefits brokerage helping small and mid-sized employers reduce costs, attract talent, and stay compliant since 1979." />
+  <meta name="theme-color" content="#0f1b2d" />
+  <meta property="og:title" content="Benefits Research Company" />
+  <meta property="og:description" content="Employee benefits solutions since 1979. Reduce costs, attract talent, and stay compliant." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="" />
+  <meta property="og:url" content="" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%230f1b2d'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='30' fill='%23ffffff'%3EB%3C/text%3E%3C/svg%3E" />
+  <style>
+    :root{
+      --bg:#0f1b2d;
+      --ink:#0e1116;
+      --muted:#6b7280;
+      --brand:#1e9c6a;
+      --brand-ink:#0b6644;
+      --paper:#ffffff;
+      --card:#f7f8fa;
+      --ring:rgba(30,156,106,0.35);
+      --shadow:0 10px 20px rgba(0,0,0,.08),0 6px 6px rgba(0,0,0,.06);
+      --border:#e8ebf0;
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      line-height:1.6; color:var(--ink); background:var(--paper);
+    }
+    a{color:var(--brand); text-decoration:none}
+    a:hover{text-decoration:underline}
+    .container{max-width:1100px; margin:0 auto; padding:0 20px}
+    .skip{position:absolute; left:-9999px; top:auto; width:1px; height:1px; overflow:hidden}
+    .skip:focus{left:12px; top:12px; width:auto; height:auto; padding:10px 14px; background:#fff; border:2px solid var(--brand); border-radius:10px; z-index:1000}
+    header{position:sticky; top:0; z-index:50; background:rgba(255,255,255,.9); backdrop-filter:saturate(180%) blur(8px); border-bottom:1px solid #eef0f3;}
+    .nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+    .brand{display:flex; gap:12px; align-items:center; font-weight:700; letter-spacing:.3px}
+    .logo{width:36px; height:36px; border-radius:10px; background:linear-gradient(135deg,var(--bg),#1a2d4a); display:grid; place-items:center; color:#fff; box-shadow:var(--shadow)}
+    .logo span{font-size:18px}
+    .brand .name{font-size:18px}
+    .cta{display:flex; gap:10px; align-items:center}
+    .btn{appearance:none; border:1px solid transparent; background:var(--brand); color:#fff; padding:10px 14px; border-radius:12px; font-weight:600; cursor:pointer; box-shadow:var(--shadow)}
+    .btn:hover{filter:brightness(0.95)}
+    .btn.alt{background:#fff; color:var(--brand); border-color:var(--brand)}
+    .btn:focus{outline:3px solid var(--ring); outline-offset:2px}
+    .hero{background:linear-gradient(180deg, #f6f9fc, #ffffff);}
+    .hero .wrap{display:grid; grid-template-columns:1.2fr .8fr; gap:40px; padding:64px 0}
+    .hero h1{font-size:44px; line-height:1.15; margin:0 0 14px}
+    .hero p{font-size:18px; color:#374151; margin:0 0 24px}
+    .hero .actions{display:flex; gap:12px; flex-wrap:wrap}
+    .hero .card{background:var(--card); border:1px solid var(--border); padding:18px; border-radius:16px}
+    @media (max-width:900px){.hero .wrap{grid-template-columns:1fr; padding:38px 0} .hero h1{font-size:34px}}
+    .proof{padding:30px 0 0}
+    .pill-row{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px}
+    .pill{display:flex; align-items:center; gap:10px; padding:12px 14px; background:#fff; border:1px solid var(--border); border-radius:14px}
+    @media (max-width:800px){.pill-row{grid-template-columns:1fr}}
+    section{padding:64px 0}
+    h2{font-size:28px; margin:0 0 14px}
+    .muted{color:var(--muted)}
+    .about .card{background:#fff; border:1px solid var(--border); border-radius:16px; padding:24px; box-shadow:var(--shadow)}
+    .services-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:16px}
+    .service{background:#fff; border:1px solid var(--border); border-radius:14px; padding:18px}
+    .service h3{margin:6px 0 8px; font-size:18px}
+    @media (max-width:900px){.services-grid{grid-template-columns:1fr}}
+    .cta-banner{background:linear-gradient(135deg,#0f1b2d,#152a45); color:#fff; border-radius:20px; padding:28px; display:flex; align-items:center; justify-content:space-between; gap:16px}
+    .cta-banner h3{margin:0; font-size:22px}
+    .cta-banner p{margin:6px 0 0; color:#dbe7ff}
+    .cta-banner .btn{background:#2ac389; border-color:#2ac389}
+    .cta-banner .btn.alt{background:transparent; color:#fff; border-color:#6fbfa4}
+    @media (max-width:800px){.cta-banner{flex-direction:column; align-items:flex-start}}
+    /* Form styles */
+    .form{background:#fff; border:1px solid var(--border); border-radius:16px; padding:22px; box-shadow:var(--shadow)}
+    .field{display:flex; flex-direction:column; gap:6px; margin-bottom:14px}
+    .field label{font-weight:600}
+    .field input,.field select,.field textarea{border:1px solid var(--border); border-radius:10px; padding:10px 12px; font:inherit}
+    .field input:focus,.field select:focus,.field textarea:focus{outline:3px solid var(--ring); border-color:var(--brand)}
+    .grid-2{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+    @media (max-width:800px){.grid-2{grid-template-columns:1fr}}
+    footer{background:#0f1220; color:#d8dde6; padding:36px 0}
+    footer a{color:#c9f0df}
+    .foot-grid{display:grid; grid-template-columns:2fr 1fr; gap:20px}
+    .disclaimer{font-size:12px; color:#98a2b3}
+    @media (max-width:800px){.foot-grid{grid-template-columns:1fr}}
+    .sp-1{height:10px} .sp-2{height:20px} .sp-3{height:30px}
+    .tag{display:inline-block; font-size:12px; background:#ecfdf5; color:var(--brand-ink); border:1px solid #b7ead6; padding:4px 8px; border-radius:999px}
+    .list-clean{margin:0; padding-left:18px}
+  </style>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header>
+    <div class="container nav" role="navigation" aria-label="Primary">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"><span>B</span></div>
+        <div class="name" aria-label="Site name">Benefits Research Company</div>
+      </div>
+      <div class="cta">
+        <a class="btn alt" href="#contact" aria-label="Jump to contact">Contact</a>
+        <a class="btn" href="mailto:info@benefitsresearchco.com">Free Consultation</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container wrap">
+        <div>
+          <span class="tag">Trusted Since 1979</span>
+          <div class="sp-2"></div>
+          <h1>Smarter Benefits, Backed by Experience</h1>
+          <p>We help small and mid‑sized employers reduce costs, attract and retain talent, and stay compliant — with custom plan design, hands‑on guidance, and proactive negotiation at renewal.</p>
+          <p><em>Many employers we’ve worked with have found savings opportunities in the 10–20% range, depending on plan design and claims experience.</em></p>
+          <div class="actions">
+            <a class="btn" href="mailto:info@benefitsresearchco.com">Schedule a Free Consultation</a>
+            <a class="btn alt" href="tel:+1-555-555-5555">Call (555) 555‑5555</a>
+          </div>
+          <div class="sp-2"></div>
+          <div class="proof">
+            <div class="pill-row" role="list">
+              <div class="pill" role="listitem">
+                <span><strong>Stay Compliant</strong> with ERISA &amp; ACA support</span>
+              </div>
+              <div class="pill" role="listitem">
+                <span><strong>Reduce Costs</strong> via plan design &amp; funding strategies</span>
+              </div>
+              <div class="pill" role="listitem">
+                <span><strong>Active Negotiation</strong> with carriers at renewal to keep costs competitive</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <aside class="card" aria-label="Quick facts">
+          <h2 style="margin:0 0 8px">Quick Facts</h2>
+          <ul class="list-clean">
+            <li><strong>40+ years</strong> advising employers</li>
+            <li><strong>10–1,000</strong> employees served</li>
+            <li><strong>Custom plan design</strong> &amp; hands‑on service</li>
+          </ul>
+          <div class="sp-1"></div>
+          <p class="muted" style="margin:0">Looking for a second opinion on your benefits? Start with a free review.</p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2>About Benefits Research Company</h2>
+        <p class="muted">Family‑owned brokerage with decades of experience helping employers navigate benefits, compliance, and employee communications.</p>
+        <div class="sp-1"></div>
+        <div class="card">
+          <p>Since 1979, we’ve partnered with businesses to design benefits that fit their workforce and budget. We combine market benchmarking, funding strategy, and vendor management with practical compliance support so you can focus on running your business.</p>
+          <p>Whether you’re evaluating fully‑insured options, exploring level‑funded plans, or considering self‑funded with stop‑loss, we’ll help you weigh trade‑offs and manage the change with your team. And each year, we actively negotiate with carriers at renewal to keep your plan costs competitive.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services" id="services">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="muted">Tailored solutions for small and mid‑sized employers.</p>
+        <div class="sp-2"></div>
+        <div class="services-grid">
+          <div class="service" aria-label="Health Insurance">
+            <h3>Health Insurance</h3>
+            <p>Fully‑insured, level‑funded, and self‑funded strategies aligned to your risk tolerance and goals.</p>
+          </div>
+          <div class="service" aria-label="Dental &amp; Vision">
+            <h3>Dental &amp; Vision</h3>
+            <p>Competitive plans and employee‑friendly options that round out your total rewards.</p>
+          </div>
+          <div class="service" aria-label="Disability &amp; Life">
+            <h3>Disability &amp; Life</h3>
+            <p>Short‑ and long‑term disability, basic and voluntary life to protect your team.</p>
+          </div>
+          <div class="service" aria-label="Voluntary Benefits">
+            <h3>Voluntary Benefits</h3>
+            <p>Accident, critical illness, hospital indemnity, and more — employee‑paid options.</p>
+          </div>
+          <div class="service" aria-label="Compliance Support">
+            <h3>Compliance Support</h3>
+            <p>ERISA/ACA guidance, notices, and vendor coordination. (We don’t provide legal advice.)</p>
+          </div>
+          <div class="service" aria-label="Employee Communication">
+            <h3>Employee Communication</h3>
+            <p>Clear enrollment materials and ongoing support to help employees use their benefits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / NETLIFY FORM -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div class="sp-1"></div>
+        <div class="grid-2">
+          <div class="form" role="form" aria-label="Contact form">
+            <h2 style="margin-top:0">Get a Free Benefits Review</h2>
+            <p class="muted" style="margin-top:0">Share your current plan and goals — we’ll provide a practical, no‑obligation assessment.</p>
+
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+              <input type="hidden" name="form-name" value="contact" />
+              <p hidden>
+                <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
+              </p>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="name">Your Name</label>
+                  <input id="name" name="name" type="text" autocomplete="name" required />
+                </div>
+                <div class="field">
+                  <label for="company">Company</label>
+                  <input id="company" name="company" type="text" autocomplete="organization" />
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required />
+                </div>
+                <div class="field">
+                  <label for="phone">Phone</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel" />
+                </div>
+              </div>
+
+              <div class="grid-2">
+                <div class="field">
+                  <label for="employees">Employees</label>
+                  <select id="employees" name="employees">
+                    <option value="10-24">10–24</option>
+                    <option value="25-49">25–49</option>
+                    <option value="50-99">50–99</option>
+                    <option value="100-249">100–249</option>
+                    <option value="250+">250+</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="goal">Primary Goal</label>
+                  <select id="goal" name="goal">
+                    <option value="reduce-costs">Reduce costs</option>
+                    <option value="retain-talent">Attract/retain talent</option>
+                    <option value="compliance">Compliance support</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" placeholder="Tell us a little about your current plan and renewal timeline..."></textarea>
+              </div>
+
+              <button class="btn" type="submit">Send Request</button>
+            </form>
+          </div>
+
+          <div class="cta-banner" role="region" aria-label="Contact info">
+            <div>
+              <h3>Talk to a Benefits Advisor</h3>
+              <p>Prefer email or phone? Reach out and we’ll respond quickly.</p>
+            </div>
+            <div style="display:flex; gap:10px; flex-wrap:wrap">
+              <a class="btn" href="mailto:info@benefitsresearchco.com?subject=Benefits%20Review">Email Us</a>
+              <a class="btn alt" href="tel:+1-555-555-5555">Call (555) 555‑5555</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container foot-grid">
+      <div>
+        <strong>Benefits Research Company</strong>
+        <div>Employee Benefits Brokerage</div>
+        <div>Since 1979</div>
+        <div class="sp-1"></div>
+        <div>Email: <a href="mailto:info@benefitsresearchco.com">info@benefitsresearchco.com</a></div>
+        <div>Phone: <a href="tel:+1-555-555-5555">(555) 555‑5555</a></div>
+        <div>Location: Atlanta, GA</div>
+      </div>
+      <div>
+        <div class="disclaimer">
+          <p><strong>Disclaimer:</strong> Any cost savings depend on your company’s specific circumstances and are not guaranteed. Benefits Research Company does not provide legal or tax advice. Consult your advisors before making plan decisions.</p>
+        </div>
+      </div>
+    </div>
+    <div class="container" style="margin-top:24px; font-size:12px; color:#8a93a6">© <span id="year"></span> Benefits Research Company. All rights reserved.</div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // Optional: smooth scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', e=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ e.preventDefault(); el.scrollIntoView({behavior:'smooth'}); }
+      });
+    });
+  </script>
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Benefits Research Company",
+    "url": "",
+    "logo": "",
+    "email": "info@benefitsresearchco.com",
+    "telephone": "+1-555-555-5555",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Atlanta",
+      "addressRegion": "GA",
+      "addressCountry": "US"
+    }
+  }
+  </script>
+</body>
+</html>
