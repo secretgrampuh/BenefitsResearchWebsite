@@ -204,7 +204,7 @@
             <h2 style="margin-top:0">Get a Free Benefits Review</h2>
             <p class="muted" style="margin-top:0">Share your current plan and goals — we’ll provide a practical, no‑obligation assessment.</p>
 
-            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" action="/thanks.html">
               <input type="hidden" name="form-name" value="contact" />
               <p hidden>
                 <label>Don’t fill this out if you’re human: <input name="bot-field" /></label>
@@ -259,7 +259,7 @@
                 <textarea id="message" name="message" rows="5" placeholder="Tell us a little about your current plan and renewal timeline..."></textarea>
               </div>
 
-              <button class="btn" type="submit">Send Request</button>
+              <button type="submit">Send Request</button>
             </form>
           </div>
 
@@ -329,6 +329,7 @@
   </script>
 </body>
 </html>
+
 
 
 
